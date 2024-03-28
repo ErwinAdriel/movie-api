@@ -6,9 +6,47 @@
 
 body{
     height: 100vh;
-    background:linear-gradient(#273432 50%, #DE7F57 50%);   
+    background:linear-gradient(#5E5754 50%, #DE7F57 50%);   
 }
 
 .container{
-    
+    background-color: #273432;
+    width: 90vw;
+    max-width: 37.5em;
+    padding: 3em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
+
+.container-search{
+    display:grid;
+    grid-template-columns: 8fr 2fr;
+    gap: 1.5em;
+
+}
+
+.container-search input, .container-search button{
+    font-size: 1em;
+    outline: none;
+    border-radius: 1em;
+}
+
+.container-search input{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #D9D4E5;
+    padding: 0.5em;
+}
+
+.container-search input:focus{
+    border: 1px solid #fff;
+}
+
+.container-search button{
+    background-color: #DE7F57;
+    border: 0;
+    cursor: pointer;
+}
+
