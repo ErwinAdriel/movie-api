@@ -13,6 +13,7 @@ _INDEX_
 * HTML
 * CSS 
 * JS
+* OMDb API
 
 ## Autores ✒️
 
