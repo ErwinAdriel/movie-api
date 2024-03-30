@@ -16,8 +16,29 @@ let getMovie = () => {
             //si la pelicula esta en database
             if(data.Response == "True"){
                 main.innerHTML = `
-                    <div class="info">
-                        <img src=${data.Poster} class="poster">
+                    <div class="izquierda">
+                        <div class="imagen">
+                            <img src=${data.Poster} class="poster">
+                        </div>
+                        <div class="detalles">
+                            <span>${data.Rated}</span>
+                            <span>${data.Year}</span>
+                            <span>${data.Runtime}</span>
+                        </div>
+                    </div>
+                    <div class="derecha">
+                        <h1>${data.Title}</h1>
+                        <div class="genero">
+                            ${data.Genre.split(",").join("</div><div>")}
+                        </div>
+                        <div class="sinopsis">
+                            <h3>Sinopsis:</h3>
+                            <p>${data.Plot}</p>
+                        </div>
+                        <div class="elenco">
+                            <h3>Elenco:</h3>
+                            <p>${data.Actors}</p>
+                        </div>
                     </div>
                 `;
             }
